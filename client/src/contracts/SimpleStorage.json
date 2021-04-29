@@ -32,15 +32,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Project/truffle react/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Project/truffle react/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x512df1603c5f878921707d236bc53d974afe05b4d9de4b6094249bac5ab60efe\",\"urls\":[\"bzz-raw://0d6de97971b1c387f984fa7ea1d9ec10f8a63d68cc63bf8bd00d8c3a7c9e3ee1\",\"dweb:/ipfs/Qmbt92T34sHzedfJjDsvbisvLhRtghNwS6VW8tqrGkrqTD\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a723158200158f79f3b0b829f3f1a8da35330627625e2f2247acefa44342674c83522ca9d64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a723158200158f79f3b0b829f3f1a8da35330627625e2f2247acefa44342674c83522ca9d64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Project/GitHub/Webapp/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Project/GitHub/Webapp/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x512df1603c5f878921707d236bc53d974afe05b4d9de4b6094249bac5ab60efe\",\"urls\":[\"bzz-raw://0d6de97971b1c387f984fa7ea1d9ec10f8a63d68cc63bf8bd00d8c3a7c9e3ee1\",\"dweb:/ipfs/Qmbt92T34sHzedfJjDsvbisvLhRtghNwS6VW8tqrGkrqTD\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a7231582060c397a9201290d38b531e67d663126ed2bd43959679677151f4bc916108498264736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a7231582060c397a9201290d38b531e67d663126ed2bd43959679677151f4bc916108498264736f6c63430005100032",
   "sourceMap": "66:176:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:176:1;;;;;;;",
   "deployedSourceMap": "66:176:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:176:1;;;;;;;;;;;;;;;;;;;;;;;;113:53;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;113:53:1;;;;;;;;;;;;;;;;;:::i;:::-;;170:70;;;:::i;:::-;;;;;;;;;;;;;;;;;;;113:53;160:1;147:10;:14;;;;113:53;:::o;170:70::-;206:4;225:10;;218:17;;170:70;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.21 <0.7.0;\n\ncontract SimpleStorage {\n  uint storedData;\n\n  function set(uint x) public {\n    storedData = x;\n  }\n\n  function get() public view returns (uint) {\n    return storedData;\n  }\n}\n",
-  "sourcePath": "C:/Project/truffle react/contracts/SimpleStorage.sol",
+  "sourcePath": "C:/Project/GitHub/Webapp/contracts/SimpleStorage.sol",
   "ast": {
-    "absolutePath": "/C/Project/truffle react/contracts/SimpleStorage.sol",
+    "absolutePath": "/C/Project/GitHub/Webapp/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
         59
@@ -296,7 +296,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/C/Project/truffle react/contracts/SimpleStorage.sol",
+      "absolutePath": "/C/Project/GitHub/Webapp/contracts/SimpleStorage.sol",
       "exportedSymbols": {
         "SimpleStorage": [
           59
@@ -601,12 +601,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x021B1d934f955B69e92a1ae891D957b164dcBf72",
-      "transactionHash": "0xbb09f4fc81cc6c1c3abc4e0f5f46c8a040291fdd874d9fc0bacc085b3c8ae91a"
+      "address": "0x039a329f6a9BD1E5dBB22F3a21749af03b1a7918",
+      "transactionHash": "0xb39109e2bc422278ffd90c93cba9ac93db2b06c3b1f9d84789ba7450bee8bc8f"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-29T10:17:08.778Z",
+  "updatedAt": "2021-04-29T10:41:51.817Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
