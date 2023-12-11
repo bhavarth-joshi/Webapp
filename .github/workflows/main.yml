@@ -1,4 +1,48 @@
-- name: Upload coverage reports to Codecov
+            - name: Codecov
+  # You may pin to the exact commit or the version.
+  # uses: codecov/codecov-action@428cda1b1c731be3e8bfa389049c3f276d572ffb
   uses: codecov/codecov-action@v3
-  env:
+  with:
+    # Repository upload token - get it from codecov.io. Required only for private repositories
     CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    # # Path to coverage file to upload
+    # file: # optional
+    # # Comma-separated list of files to upload
+    # files: # optional
+    # # Directory to search for coverage reports.
+    # directory: # optional
+    # # Flag upload to group coverage metrics (e.g. unittests | integration | ui,chrome)
+    # flags: # optional
+    # # Don't upload files to Codecov
+    # dry_run: # optional
+    # # Environment variables to tag the upload with (e.g. PYTHON | OS,PYTHON)
+    # env_vars: # optional
+    # # Specify whether or not CI build should fail if Codecov runs into an error during upload
+    # fail_ci_if_error: # optional
+    # # Run with gcov support
+    # gcov: # optional
+    # # User defined upload name. Visible in Codecov UI
+    # name: # optional
+    # Override the assumed OS. Options are linux | macos | windows.
+    #os: # optional
+    # Specify the branch name
+    #override_branch: # optional
+    # Specify the build number
+    #override_build: # optional
+    # Specify the commit SHA
+    #override_commit: # optional
+    # Specify the pull request number
+    #override_pr: # optional
+    # Comma-separated list of plugins for use during upload.
+    #plugins: # optional
+    # Used when not in git/hg project to identify project root directory
+    #root_dir: # optional
+    # Specify the slug manually (Enterprise use)
+    #slug: # optional
+    # Specify whether the Codecov output should be verbose
+    #verbose: # optional
+    # Specify which version of the Codecov CLI should be used. Defaults to `latest`
+   # version: # optional
+    # Directory in which to execute codecov.sh
+   # working-directory: # optional
+          
